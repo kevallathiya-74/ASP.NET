@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="P10 User_Control.ascx.cs" Inherits="_230801347.Extra.P10_User_Control" %>
+<asp:TextBox ID="txt_dateTime" SkinID="textbox" runat="server" ReadOnly="True" Width="286px"></asp:TextBox>

@@ -1,0 +1,181 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="C2.master.cs" Inherits="_230801347.Extra.C2" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>Atmiya University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Atmiya University Web Forms practice project 230801347 by Keval Lathiya." />
+    <link href="File1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="<%= GetThemeClass() %>">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="header">
+            <div class="logo">
+                <asp:Image ID="Image1" runat="server" Height="92px" ImageUrl="~/Extra/Image/Atmiya Logo.png" Width="117px" AlternateText="Atmiya University logo" />
+            </div>
+            <div class="headerText">
+                <div class="headerTitle">Atmiya University</div>
+            </div>
+            <button type="button" id="menuToggleButton" class="menuToggle" aria-controls="sidebarNav" aria-expanded="false">
+                Menu
+            </button>
+        </div>
+        <div class="main">
+            <div class="sidebar" id="sidebarNav">
+                <div class="sidebarTitle">Navigation</div>
+                <asp:Menu ID="Menu1" runat="server" CssClass="mainMenu" Orientation="Vertical" StaticDisplayLevels="2" SkipLinkText="">
+                    <Items>
+                        <asp:MenuItem Text="Dashboard" Value="Dashboard">
+                            <asp:MenuItem NavigateUrl="~/WebForm1.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/Home.aspx" Text="Chapter Home" Value="ChapterHome"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Extra/Calc.aspx" Text="Calculator" Value="Calculator"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Extra/WebForm1.aspx" Text="Data Grid" Value="DataGrid"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Ch1" Value="Ch1">
+                            <asp:MenuItem NavigateUrl="~/Ch1/P1.aspx" Text="P1" Value="P1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P2.aspx" Text="P2" Value="P2"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P3.aspx" Text="P3" Value="P3"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P4.aspx" Text="P4" Value="P4"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P5.aspx" Text="P5" Value="P5"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P6.aspx" Text="P6" Value="P6"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P7.aspx" Text="P7" Value="P7"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P8.aspx" Text="P8" Value="P8"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P9.aspx" Text="P9" Value="P9"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P10.aspx" Text="P10" Value="P10"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P11.aspx" Text="P11" Value="P11"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P12.aspx" Text="P12" Value="P12"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P13.aspx" Text="P13" Value="P13"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P14.aspx" Text="P14" Value="P14"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P15.aspx" Text="P15" Value="P15"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P16.aspx" Text="P16" Value="P16"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P17.aspx" Text="P17" Value="P17"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch1/P20.aspx" Text="P20" Value="P20"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Ch2" Value="Ch2">
+                            <asp:MenuItem NavigateUrl="~/Ch2/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/About.aspx" Text="About" Value="About"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/Contact.aspx" Text="Contact" Value="Contact"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P1.aspx" Text="P1" Value="P1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P2.aspx" Text="P2" Value="P2"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P3.aspx" Text="P3" Value="P3"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P4.aspx" Text="P4" Value="P4"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P5.aspx" Text="P5" Value="P5"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P6.aspx" Text="P6" Value="P6"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P7.aspx" Text="P7" Value="P7"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P8.aspx" Text="P8" Value="P8"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P9.aspx" Text="P9" Value="P9"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P10.aspx" Text="P10" Value="P10"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P11.aspx" Text="P11" Value="P11"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P12.aspx" Text="P12" Value="P12"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P13.aspx" Text="P13" Value="P13"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P14.aspx" Text="P14" Value="P14"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P15.aspx" Text="P15" Value="P15"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch2/P16.aspx" Text="P16" Value="P16"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Ch3" Value="Ch3">
+                            <asp:MenuItem NavigateUrl="~/Ch3/P1.aspx" Text="P1" Value="P1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/P2.aspx" Text="P2" Value="P2"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/P3.aspx" Text="P3" Value="P3"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/P4.aspx" Text="P4" Value="P4"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/P5.aspx" Text="P5" Value="P5"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/P6.aspx" Text="P6" Value="P6"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/P7.aspx" Text="P7" Value="P7"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch3/Session_Redirect.aspx" Text="Session Redirect" Value="SessionRedirect"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Ch4" Value="Ch4">
+                            <asp:MenuItem NavigateUrl="~/Ch4/P1.aspx" Text="P1" Value="P1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch4/P2.aspx" Text="P2" Value="P2"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch4/P3.aspx" Text="P3" Value="P3"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch4/P4.aspx" Text="P4" Value="P4"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Ch4/P5.aspx" Text="P5" Value="P5"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+            <div id="navBackdrop" class="navBackdrop"></div>
+            <main class="body" id="body" role="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+        </div>
+        <div class="footer">
+            <div class="footerInner">
+                <span class="footerBrand">Atmiya University</span>
+                <span class="footerCopy">Project 230801347 - &copy; <%= DateTime.Now.Year %> Keval Lathiya</span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            (function () {
+                var menuButton = document.getElementById("menuToggleButton");
+                var navBackdrop = document.getElementById("navBackdrop");
+                var sidebar = document.getElementById("sidebarNav");
+
+                if (!menuButton || !navBackdrop || !sidebar) {
+                    return;
+                }
+
+                function setMenuOpen(open) {
+                    var isMobile = window.innerWidth <= 760;
+
+                    if (open) {
+                        document.body.classList.add("nav-open");
+                        menuButton.setAttribute("aria-expanded", "true");
+                        menuButton.setAttribute("aria-label", "Close navigation menu");
+
+                        if (isMobile) {
+                            sidebar.removeAttribute("inert");
+                        }
+
+                        return;
+                    }
+
+                    document.body.classList.remove("nav-open");
+                    menuButton.setAttribute("aria-expanded", "false");
+                    menuButton.setAttribute("aria-label", "Open navigation menu");
+
+                    if (isMobile) {
+                        sidebar.setAttribute("inert", "");
+                        return;
+                    }
+
+                    sidebar.removeAttribute("inert");
+                }
+
+                menuButton.addEventListener("click", function () {
+                    var isOpen = document.body.classList.contains("nav-open");
+                    setMenuOpen(!isOpen);
+                });
+
+                navBackdrop.addEventListener("click", function () {
+                    setMenuOpen(false);
+                });
+
+                window.addEventListener("resize", function () {
+                    if (window.innerWidth > 760) {
+                        setMenuOpen(false);
+                        return;
+                    }
+
+                    setMenuOpen(document.body.classList.contains("nav-open"));
+                });
+
+                var navLinks = sidebar.querySelectorAll("a");
+                for (var i = 0; i < navLinks.length; i++) {
+                    navLinks[i].addEventListener("click", function () {
+                        if (window.innerWidth <= 760) {
+                            setMenuOpen(false);
+                        }
+                    });
+                }
+
+                setMenuOpen(false);
+            })();
+        </script>
+    </form>
+</body>
+</html>

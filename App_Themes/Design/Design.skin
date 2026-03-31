@@ -1,0 +1,8 @@
+﻿<asp:Button runat="server" SkinID="btn2" CssClass="btn btn-primary" />
+<asp:Button runat="server" SkinID="btn1" CssClass="btn btn-success" />
+<asp:Button runat="server" SkinID="btn3" CssClass="btn btn-danger" />
+<asp:Button runat="server" SkinID="btn4" CssClass="btn btn-muted" />
+<asp:TextBox SkinID="textbox" runat="server" CssClass="field"></asp:TextBox>
+<asp:Label SkinID="lbl" runat="server" CssClass="text-label"></asp:Label>
+<asp:TableCell SkinID="row" runat="server" CssClass="table-cell" VerticalAlign="Middle" HorizontalAlign="Center"></asp:TableCell>
+<asp:Label SkinID="title" runat="server" CssClass="title-label"></asp:Label>

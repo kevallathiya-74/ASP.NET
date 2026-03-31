@@ -1,0 +1,52 @@
+## Visual Studio and IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+
+## Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+## NuGet (restore on build)
+packages/
+*.nupkg
+!packages/build/
+!packages/build/**
+
+## ASP.NET / IIS artifacts
+App_Data/*.mdf
+App_Data/*.ldf
+*.log
+/.vs/config/applicationhost.config
+
+## Publish profiles and output
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+## Test and coverage output
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+## ReSharper / Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+## Python virtual environments (accidental local tooling)
+.venv/
+venv/
+
+## OS files
+.DS_Store
+Thumbs.db
